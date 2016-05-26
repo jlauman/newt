@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>:newt</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <base href="/react/index.html">
+    <link rel="stylesheet" href="/lib/css/marx.min.css">
+    <link rel="stylesheet" href="/lib/css/newt.css">
+  </head>
+  <body>
+    <article>
+      <header>
+        <h2><a href="/">Home</a> / React JavaScript</h2>
+        <p>
+          The React JavaScript template uses React, JavaScript and WebSockets.
+        </p>
+        <p>
+          The WebSocket will disconnect after 15 seconds of inactivity.
+          The server time updates every 3 seconds.
+        </p>
+        <hr>
+      </header>
+      <div id='main'></div>
+    </article>
+
+    <script src="/lib/js/react-15.1.0.js"></script>
+    <script src="/lib/js/react-dom-15.1.0.js"></script>
+    <script src="react_component.js"></script>
+    <script>ReactComponent.init();</script>
+  </body>
+</html>

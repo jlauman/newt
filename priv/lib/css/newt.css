@@ -1,0 +1,30 @@
+
+html {
+  font-family: monospace;
+  color: #333;
+  background-color: #eee;
+}
+
+body {
+  margin: 2em;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:active {
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}

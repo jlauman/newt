@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>:newt</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <base href="/elm/index.html">
+    <link rel="stylesheet" href="/lib/css/marx.min.css">
+    <link rel="stylesheet" href="/lib/css/newt.css">
+  </head>
+  <body>
+    <article>
+      <header>
+        <h2><a href="/">Home</a> / Elm Language</h2>
+        <p>
+          The Elm Language template uses Elm and WebSockets.
+        </p>
+        <p>
+          The WebSocket will NOT disconnect (because of Elm's behavior).
+          The server time updates every 3 seconds.
+        </p>
+        <hr>
+      </header>
+      <div id='main'></div>
+    </article>
+
+    <script src="main.js"></script>
+    <script>
+        var node = document.getElementById('main');
+        var app = Elm.Main.embed(node);
+    </script>
+  </body>
+</html>

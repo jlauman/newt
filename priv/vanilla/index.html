@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>:newt</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <base href="/vanilla/index.html">
+    <link rel="stylesheet" href="/lib/css/marx.min.css">
+    <link rel="stylesheet" href="/lib/css/newt.css">
+  </head>
+  <body>
+    <article>
+      <header>
+        <h2><a href="/">Home</a> / Vanilla JavaScript</h2>
+        <p>
+          The Vanilla JavaScript template uses only JavaScript and HTML DOM API and WebSockets.
+        </p>
+        <p>
+          The WebSocket will disconnect after 15 seconds of inactivity.
+          The server time updates every 3 seconds.
+        </p>
+        <hr>
+      </header>
+      <section>
+        <h2>Status: <span id='status'></span></h2>
+      </section>
+      <section>
+        <h2>Server Time: <span id='serverTime'>Waiting...</span></h2>
+      </section>
+      <section>
+        <h2>
+          Client Message:
+          <input id='clientMessage' placeholder='Enter a message'></input>
+          <button id='sendButton'>Send</button>
+        </h2>
+      </section>
+      <section>
+        <h2>
+          Server Message:
+          <span id='serverMessage'>&nbsp;</span>
+        </h2>
+      </section>
+    </article>
+    <script src="vanilla.js"></script>
+    <script>WebSocketHandler.init();</script>
+  </body>
+</html>
